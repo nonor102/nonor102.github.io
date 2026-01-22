@@ -225,28 +225,41 @@ section:nth-child(even) {
 }
 
 .skill-item {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 .skill-name {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
     font-weight: 600;
+    font-size: 1.05rem;
 }
 
-.skill-bar {
-    height: 8px;
-    background: #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
+.skill-level {
+    display: flex;
+    gap: 2px;
 }
 
-.skill-progress {
-    height: 100%;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
-    border-radius: 10px;
-    transition: width 1s ease;
+.star {
+    color: #ddd;
+    font-size: 1.2rem;
+}
+
+.star.filled {
+    color: #ffd700;
+    text-shadow: 0 0 2px rgba(255, 215, 0, 0.5);
+}
+
+.skill-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+    padding-left: 0.2rem;
 }
 
 /* Works Section */
